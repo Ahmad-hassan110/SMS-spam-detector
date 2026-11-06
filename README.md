@@ -1,8 +1,9 @@
-# 🛡️ SMS Scam and Fraud Shield
+# SMS Scam and Fraud Shield
 
 An interactive Machine Learning web application that helps users identify suspicious SMS messages and understand common scam techniques.
+## Live Demo
 
-🚀 **https://sms-spam-detector-777.streamlit.app**
+**https://sms-spam-detector-777.streamlit.app**
 
 ## Overview
 
@@ -112,8 +113,6 @@ The project also considers class imbalance and the higher cost of missing fraudu
    ```bash
    streamlit run app.py
    ```
-
-The application will open at `https://sms-spam-detector-777.streamlit.app`.
 
 ## Project Structure
 
