@@ -1,0 +1,11 @@
+fault,detected_by,records_affected
+Duplicate records,df.duplicated('text').sum(),403
+Conflicting labels,groupby(text).label.nunique() > 1,0
+Missing/empty text,text.isna() | text.strip()=='',0
+Encoding noise,regex &\w+; or non-ASCII,790
+Inconsistent whitespace,"regex ^\s|\s$|\s{2,}",425
+Length outliers,len > Q3+1.5*IQR (251),68
+Invalid label spelling,"label not in {ham, spam}",0
+Near-duplicates (digits differ),duplicated after digits->NUM,34
+Too-short messages,len(text.strip()) <= 3,12
+Inconsistent casing (ALL CAPS),upper letters > 80%,107
