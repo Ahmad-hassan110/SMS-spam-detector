@@ -1,6 +1,30 @@
-node_modules/
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets
 .env
-dist/
-build/
-.next/
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+
+# Logs
+*.log
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Large datasets (adjust if needed)
+datasets/
+data/
